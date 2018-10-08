@@ -26,10 +26,12 @@ On computer B (the catcher)
 
 **Convention**
 
-| -p | Pitcher mode |
-| -c | Catcher mode |
-| -port <port> | (Pitcher) TCP socket port used for connecting \\ (Catcher) TCP socket port used for listening |
-| -bind <ip_address> | (Catcher) TCP socket bind address that will be used to run listen |
-| -mps <rate> | (Pitcher) the speed of message sending expressed as 'messages per second' (default: 1) |
-| -size <size> | (Pitcher) message length (minimum: 50, maximum: 3000, default: 300) |
-| <hostname> | (Pitcher) the name of the computer which runs Catcher |
+Parameter | Description
+:---: | :---:
+`-p` | *Pitcher mode*
+`-c` | *Catcher mode*
+`-port <port>` | *(Pitcher) TCP socket port used for connecting <br/> (Catcher) TCP socket port used for listening*
+`-bind <ip_address>` | *(Catcher) TCP socket bind address that will be used to run listen*
+`-mps <rate>` | *(Pitcher) the speed of message sending expressed as 'messages per second' (default: 1)*
+`-size <size>` | *(Pitcher) message length (minimum: 50, maximum: 3000, default: 300)*
+`<hostname>` | *(Pitcher) the name of the computer which runs Catcher*

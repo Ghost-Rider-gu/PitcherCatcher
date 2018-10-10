@@ -20,7 +20,7 @@ On computer A (the pitcher)
 On computer B (the catcher)
 > java -jar PitcherCatcher.jar -c -bind 'address' -port 'port number'
 
-***Example:** java -jar PitcherCatcher.jar -c -bind ComputerA -port 8888*
+***Example:** java -jar PitcherCatcher.jar -c -bind 192.168.0.1 -port 8888*
 
 ----------
 

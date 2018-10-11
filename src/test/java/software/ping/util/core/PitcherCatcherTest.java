@@ -2,6 +2,7 @@ package software.ping.util.core;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import software.ping.core.Catcher;
 import software.ping.core.Pitcher;
@@ -44,6 +45,7 @@ public class PitcherCatcherTest {
     }
 
     @Test
+    @Ignore
     public void shouldStartPitcherCatcher() throws Exception {
         catcher.startCatcher();
         pitcher.startPitcher();

@@ -36,6 +36,8 @@ public class Catcher {
             InetAddress address = InetAddress.getByName(this.params.getHostName());
             catcherSocket = new ServerSocket(this.params.getPort(), 5, address);
 
+            System.out.println("Catcher was started. Listening port " + this.params.getPort() + " ...");
+
             while (true) {
                 new CatcherHandler(catcherSocket.accept()).start();
             }
@@ -57,7 +59,9 @@ public class Catcher {
      */
     public void stopCatcher() {
         try {
-            catcherSocket.close();
+            if (catcherSocket != null && !catcherSocket.isClosed()) {
+                catcherSocket.close();
+            }
         } catch (IOException ex) {
             System.out.println("Error: " + ex.getMessage());
         }

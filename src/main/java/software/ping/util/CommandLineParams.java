@@ -17,7 +17,7 @@ public class CommandLineParams {
 
     /*
     * Getters and Setters for fields.
-    * We could use lombok (@Getter, @Setter) for that but might be you doesn't have a plugin for your IDE.
+    * We could use lombok (@Getter, @Setter) for that but you might not have a plugin for your IDE.
     * So I chose plain Java. Also we use auto-boxing here
     * */
 

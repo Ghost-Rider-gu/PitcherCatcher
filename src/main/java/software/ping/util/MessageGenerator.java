@@ -3,13 +3,13 @@ package software.ping.util;
 import java.util.Random;
 
 /**
- * Message generator. Message will be is bounded.
+ * Message generator. Message will be bounded.
  */
 public class MessageGenerator {
 
     /**
-     * Return random string.
-     * FYI - for this we could be use Apache Commons library, especially RandomStringUtils.
+     * Return a random string.
+     * FYI - for this we could use Apache Commons library, especially RandomStringUtils.
      *
      * @param length message length {@link int}
      * @return message {@link String}

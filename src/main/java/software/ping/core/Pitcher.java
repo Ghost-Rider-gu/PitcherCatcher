@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Pitcher is generating the messages and sending their to Catcher.
+ * Pitcher is generating the messages and sending them to Catcher.
  */
 public class Pitcher {
 
@@ -78,16 +78,16 @@ public class Pitcher {
             long timeReceivingCP;
 
             /*
-             * average times for cycle (Pitcher->Catcher->Pitcher) averageTimePCP
-             * average times for cycle (Pitcher->Catcher) averageTimePC
-             * average times for cycle (Catcher->Pitcher) averageTimeCP
+             * average time for cycle (Pitcher->Catcher->Pitcher) averageTimePCP
+             * average time for cycle (Pitcher->Catcher) averageTimePC
+             * average time for cycle (Catcher->Pitcher) averageTimeCP
             */
             int[] averageTimePCP = new int[this.params.getMps() + 1];
             int[] averageTimePC = new int[this.params.getMps() + 1];
             int[] averageTimeCP = new int[this.params.getMps() + 1];
 
             while (true) {
-                // send message to the Catcher and get it back (number message starts from one)
+                // send message to the Catcher and get it back (message number starts from one)
                 for (int i = 1; i <= this.params.getMps(); i++ ) {
                     timeSendingPCP = System.currentTimeMillis();
                     timeSendingPC = System.currentTimeMillis();
@@ -152,7 +152,7 @@ public class Pitcher {
 
     /**
      * Trying to reconnect to the Catcher.
-     * We could be restrict the quantity of connections (int connections = 100 for instance)
+     * We could restrict the quantity of connections (int connections = 100 for instance)
      */
     private void restartPitcher() {
         this.stopPitcher();

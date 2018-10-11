@@ -10,7 +10,7 @@ import software.ping.core.Catcher;
 import software.ping.core.Pitcher;
 
 /**
- * Parse command line and prepare pitcher or catcher to start.
+ * Parse command line and prepare pitcher or catcher for start.
  */
 public class PitcherCatcherStarter {
 
@@ -87,7 +87,7 @@ public class PitcherCatcherStarter {
                 if (commandLine.hasOption("size")) {
                     int messageLength = Integer.parseInt(commandLine.getOptionValue("size"));
                     if (messageLength < 50 || messageLength > 3000) {
-                        throw new ParseException("Inappropriate length for message. Message length might be from 50 to 3000.");
+                        throw new ParseException("Inappropriate length for message. Message length should be from 50 to 3000.");
                     } else {
                         this.params.setMessageLength(Integer.parseInt(commandLine.getOptionValue("size")));
                     }

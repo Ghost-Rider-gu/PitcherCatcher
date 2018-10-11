@@ -1,12 +1,15 @@
 package software.ping;
 
+import software.ping.util.PitcherCatcherStarter;
+
 /**
- *
+ * Entry point for PitcherCatcher.
  */
 public class PitcherCatcher {
 
     public static void main(String[] args) {
-        System.out.println("Ping example");
+        PitcherCatcherStarter initApplication = new PitcherCatcherStarter();
+        initApplication.prepareToStart(args);
     }
 
 }

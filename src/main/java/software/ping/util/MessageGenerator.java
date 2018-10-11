@@ -29,18 +29,4 @@ public class MessageGenerator {
         return randomString.toString();
     }
 
-    /**
-     * Check the length (minimum is 50) (maximum is 3000) (by default 300).
-     * FYI - we will terminate the program, if length is inappropriate
-     * but we could be setted it as default value
-     *
-     * @param length message length {@link int}
-     */
-    public void checkLengthMessage(int length) {
-        if (length < 50 || length > 3000) {
-            System.out.println("Inappropriate length for message. Message length might be from 50 to 3000.");
-            System.exit(0);
-        }
-    }
-
 }

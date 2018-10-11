@@ -17,10 +17,14 @@ On computer A (the pitcher)
 
 ***Example:** java -jar PitcherCatcher.jar -p -port 8888 -mps 30 -size 1500 -host ComputerB*
 
+![pitcher](https://user-images.githubusercontent.com/1051058/46826207-16739300-cd9e-11e8-895c-461698d54a12.png)
+
 On computer B (the catcher)
 > java -jar PitcherCatcher.jar -c -bind 'address' -port 'port number'
 
 ***Example:** java -jar PitcherCatcher.jar -c -bind 192.168.0.1 -port 8888*
+
+![catcher](https://user-images.githubusercontent.com/1051058/46826167-fcd24b80-cd9d-11e8-8204-c9095b28d89c.png)
 
 ----------
 
